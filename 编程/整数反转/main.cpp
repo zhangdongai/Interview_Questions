@@ -4,8 +4,8 @@ int reverse(int raw_i) {
     int ret_i = 0;
     int mod = raw_i % 10;
     int div = raw_i / 10;
-    // 判断条件是余数是否为0，这个需要注意
-    while (mod != 0) {
+    // 判断条件是余数不为0或者除数不为0，这个需要注意
+    while (mod != 0 || div != 0) {
         // 结果乘以10
         ret_i *= 10;
         // 乘以10后加上余数
